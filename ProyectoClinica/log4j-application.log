@@ -100,3 +100,24 @@
 2022-01-20 18:44:09 INFO  TurnoServiceImp:79 - Se ha registrado un turno
 2022-01-20 18:44:33 INFO  TurnoServiceImp:79 - Se ha registrado un turno
 2022-01-20 18:44:33 DEBUG EmailTestCase:88 - Limpiando variables
+2022-01-20 18:57:38 DEBUG TurnoTestCase:76 - Configurando en SetUp...
+2022-01-20 18:57:38 INFO  PacienteManager:51 - Se registro un nuevo paciente
+2022-01-20 18:57:38 INFO  PacienteManager:51 - Se registro un nuevo paciente
+2022-01-20 18:57:38 INFO  PacienteManager:51 - Se registro un nuevo paciente
+2022-01-20 18:57:38 INFO  MedicoServiceImp:50 - Se registró un médico
+2022-01-20 18:57:38 INFO  MedicoServiceImp:50 - Se registró un médico
+2022-01-20 18:57:38 INFO  MedicoServiceImp:50 - Se registró un médico
+2022-01-20 18:57:38 INFO  TurnoTestCase:126 - Agregando turnos
+2022-01-20 18:58:04 INFO  TurnoServiceImp:79 - Se ha registrado un turno
+2022-01-20 18:58:27 INFO  TurnoServiceImp:79 - Se ha registrado un turno
+2022-01-20 18:58:51 INFO  TurnoServiceImp:79 - Se ha registrado un turno
+2022-01-20 18:58:51 DEBUG TurnoTestCase:99 - Limpiando variables
+2022-01-20 18:58:51 DEBUG TurnoTestCase:76 - Configurando en SetUp...
+2022-01-20 18:58:51 ERROR TurnoTestCase:169 - TEST: consultarHoraTurnoTest --> Error: org.springframework.dao.InvalidDataAccessApiUsageException: Parameter value [1000000] did not match expected type [java.lang.Long (n/a)]; nested exception is java.lang.IllegalArgumentException: Parameter value [1000000] did not match expected type [java.lang.Long (n/a)]
+2022-01-20 18:58:51 DEBUG TurnoTestCase:99 - Limpiando variables
+2022-01-20 18:58:51 DEBUG TurnoTestCase:76 - Configurando en SetUp...
+2022-01-20 18:58:51 ERROR TurnoTestCase:184 - TEST: consultarTiempoRestanteTest --> Error: org.springframework.dao.InvalidDataAccessApiUsageException: Parameter value [300] did not match expected type [java.lang.Long (n/a)]; nested exception is java.lang.IllegalArgumentException: Parameter value [300] did not match expected type [java.lang.Long (n/a)]
+2022-01-20 18:58:51 DEBUG TurnoTestCase:99 - Limpiando variables
+2022-01-20 18:58:51 DEBUG TurnoTestCase:76 - Configurando en SetUp...
+2022-01-20 18:58:51 ERROR TurnoTestCase:154 - TEST: altaTurnoTest --> Error: org.springframework.dao.InvalidDataAccessApiUsageException: Parameter value [200] did not match expected type [java.lang.Long (n/a)]; nested exception is java.lang.IllegalArgumentException: Parameter value [200] did not match expected type [java.lang.Long (n/a)]
+2022-01-20 18:58:51 DEBUG TurnoTestCase:99 - Limpiando variables
