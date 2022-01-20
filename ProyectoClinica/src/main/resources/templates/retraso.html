@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <!-- Nombre de la pestaña -->
+    <title>Clínica Santa Lucía </title>
+   <meta charset="UTF-8">
+     <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+
+			<style >
+				.cover{
+				  height:500px;
+				  background-color:#34a0a4;
+				  color:white;
+				  text-align: center;
+				}
+				
+				
+				table{ 
+				  margin-left: 340px; 
+				   text-align: center;
+				}
+				footer{
+				   background-color:#184e77;
+				   text-align: center;
+           color:white;
+				}
+				
+				footer h1{
+				  color: #d1b3c4;
+				  font: monospace;
+				}
+				footer img{
+				  color: red;
+				  transform: scale(1.5);
+				}
+				body div p{
+				  text-align: center;
+				  color:black;
+				}
+			</style>
+ </head>
+  <body>
+   
+      <div class="cover "> 
+          <a href="#" target="_blank"><img alt="Logo-Clinica-Santa Lucia" src="https://cdn.glitch.me/e162bc96-94bc-4190-8782-66a2716d3847%2Fhistoria-clinica.png?v=1636174426678" width=82 height=82  /></a>
+           <h2>🤗  ¡Hola <b th:text="${emailBody.nombrePaciente}"></b> !, se retrasó tu turno 👋 </h2>
+           <h2>Nuevos datos del turno: </h2>        
+        
+            <h3>Fecha de Turno:  <b th:text="${#temporals.format(emailBody.fechaHoraInicio,'dd/MM/yyyy')}"></b></h3>
+            <h3>Hora de Inicio: <b th:text="${#temporals.format(emailBody.fechaHoraInicio,'HH:mm')}"></b></h3>
+            <h3>Hora de Finalización: <b th:text="${#temporals.format(emailBody.fechaHoraFin,'HH:mm')}"></b></h3>
+            <h3>Nombre del Médico:  <b th:text="${emailBody.nombreMedico}"></b></h3>
+        	<h4>Sepa disculpar las molestias </h4>
+        	<h4>Saluda atentamente, <b>Clinica Santa Lucía</b>👋</h4>
+        <a href="https://github.com/fnvaldez/proyecto-clinica" target="_blank"><img alt="GitHub" src="https://cdn.glitch.me/e162bc96-94bc-4190-8782-66a2716d3847%2Ffirma-con-boligrafo.png?v=1636502696284" width=32 height=32  /></a>
+      </div>
+      
+    
+    	<footer>
+	        <a href="https://github.com/fnvaldez/proyecto-clinica" target="_blank"><img alt="GitHub" src="https://cdn.glitch.me/e162bc96-94bc-4190-8782-66a2716d3847%2Fgitlab.png?v=1636169310363" width=32 height=32  /></a>
+	        <a href="#" target="_blank"><img alt="whatssap" src="https://cdn.glitch.me/e162bc96-94bc-4190-8782-66a2716d3847%2Fwhatsapp.png?v=1636170429400" width=32 height=32  /></a>
+        </footer>
+       
+  </body>
+</html>tml>

@@ -7,6 +7,8 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
+import javax.mail.MessagingException;
+
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -21,12 +23,16 @@ import ar.edu.unju.fi.poo.clinica.repository.PacienteRepository;
 import ar.edu.unju.fi.poo.clinica.repository.TurnoRepository;
 import ar.edu.unju.fi.poo.clinica.service.TurnoService;
 import ar.edu.unju.fi.poo.clinica.util.Constante;
+import ar.edu.unju.fi.poo.clinica.util.EmailBody;
 import ar.edu.unju.fi.poo.clinica.util.Mapper;
 
 @Service
 public class TurnoServiceImp implements TurnoService {
 
 	final static Logger logger = Logger.getLogger(TurnoServiceImp.class);
+	
+	@Autowired
+	private EmailService senderService;
 	
 	@Autowired
 	private TurnoRepository turnoRepository;
@@ -63,6 +69,12 @@ public class TurnoServiceImp implements TurnoService {
 			Turno turno = validarId(turnoDTO);
 			turnoRepository.save(turno);
 			
+			try {				
+				EmailBody emailBody = new EmailBody(turno.getPaciente().getNombre(), turno.getMedico().getNombre(), turno.getPaciente().getEmail(), turno.getMedico().getEmail(), turno.getFechaHoraInicio(), turno.getFechaHoraFin(),"Nuevo Turno Registrado");
+				senderService.enviarCorreos(emailBody, "/email.html");
+			} catch (MessagingException e) {
+				logger.error(e);
+			}
 			
 			logger.info("Se ha registrado un turno");
 		}else {
@@ -148,6 +160,12 @@ public class TurnoServiceImp implements TurnoService {
 				t.setFechaHoraInicio(t.getFechaHoraInicio().plusMinutes(retraso));
 				t.setFechaHoraFin(t.getFechaHoraFin().plusMinutes(retraso));
 				turnoRepository.save(t);
+				try {				
+					EmailBody emailBody = new EmailBody(t.getPaciente().getNombre(), t.getMedico().getNombre(), t.getPaciente().getEmail(), t.getFechaHoraInicio(), t.getFechaHoraFin(),"Turno Retrasado");
+					senderService.sendEmail(emailBody, emailBody.getMailPaciente(), "/retraso.html");
+				} catch (MessagingException e) {
+					logger.error(e);
+				}
 			}
 		}
 	}
