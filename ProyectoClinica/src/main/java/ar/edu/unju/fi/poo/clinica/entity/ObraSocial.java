@@ -98,7 +98,7 @@ public class ObraSocial {
 	@Override
 	public String toString() {
 		return "ObraSocial [id=" + id + ", nombre=" + nombre + ", telefono=" + telefono + ", direccion=" + direccion
-				+ ", pacientes=" + pacientes + ", medicos=" + medicos + "]";
+				+ "]";
 	}
 	
 }

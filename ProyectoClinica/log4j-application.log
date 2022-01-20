@@ -25,3 +25,70 @@
 2022-01-20 16:57:34 INFO  PacienteTestCase:143 - Actualizando datos de paciente
 2022-01-20 16:57:34 INFO  PacienteManager:29 - Se registro un nuevo paciente
 2022-01-20 16:57:34 DEBUG PacienteTestCase:79 - Limpiando variables
+2022-01-20 17:54:50 DEBUG MedicoTestCase:50 - Configurando en SetUp...
+2022-01-20 17:54:50 DEBUG MedicoTestCase:64 - Limpiando variables
+2022-01-20 17:54:50 DEBUG MedicoTestCase:50 - Configurando en SetUp...
+2022-01-20 17:54:50 DEBUG MedicoTestCase:64 - Limpiando variables
+2022-01-20 17:57:15 DEBUG MedicoTestCase:50 - Configurando en SetUp...
+2022-01-20 17:57:15 DEBUG MedicoTestCase:64 - Limpiando variables
+2022-01-20 17:57:15 DEBUG MedicoTestCase:50 - Configurando en SetUp...
+2022-01-20 17:57:15 DEBUG MedicoTestCase:64 - Limpiando variables
+2022-01-20 18:03:48 DEBUG MedicoTestCase:61 - Configurando en SetUp...
+2022-01-20 18:03:48 INFO  MedicoTestCase:100 - Registrando medico
+2022-01-20 18:03:48 INFO  MedicoManager:29 - Se regitró un médico
+2022-01-20 18:03:48 INFO  MedicoManager:29 - Se regitró un médico
+2022-01-20 18:03:48 INFO  MedicoManager:29 - Se regitró un médico
+2022-01-20 18:03:48 ERROR MedicoManager:25 - El medico no tiene obras sociales
+2022-01-20 18:03:48 ERROR MedicoTestCase:112 - ar.edu.unju.fi.poo.clinica.exceptions.ModelException: El medico no tiene obras sociales
+2022-01-20 18:03:48 DEBUG MedicoTestCase:83 - Limpiando variables
+2022-01-20 18:03:48 DEBUG MedicoTestCase:61 - Configurando en SetUp...
+2022-01-20 18:03:48 INFO  MedicoTestCase:124 - Buscando medico
+2022-01-20 18:03:48 DEBUG MedicoTestCase:83 - Limpiando variables
+2022-01-20 18:04:04 DEBUG MedicoTestCase:50 - Configurando en SetUp...
+2022-01-20 18:04:04 DEBUG MedicoTestCase:64 - Limpiando variables
+2022-01-20 18:04:04 DEBUG MedicoTestCase:50 - Configurando en SetUp...
+2022-01-20 18:04:04 DEBUG MedicoTestCase:64 - Limpiando variables
+2022-01-20 18:10:34 DEBUG MedicoTestCase:50 - Configurando en SetUp...
+2022-01-20 18:10:34 DEBUG MedicoTestCase:64 - Limpiando variables
+2022-01-20 18:10:34 DEBUG MedicoTestCase:50 - Configurando en SetUp...
+2022-01-20 18:10:34 DEBUG MedicoTestCase:64 - Limpiando variables
+2022-01-20 18:13:34 DEBUG MedicoTestCase:55 - Configurando en SetUp...
+2022-01-20 18:13:34 INFO  MedicoTestCase:81 - Registrando medico
+2022-01-20 18:13:34 INFO  MedicoServiceImp:50 - Se registró un médico
+2022-01-20 18:13:34 INFO  MedicoServiceImp:50 - Se registró un médico
+2022-01-20 18:13:34 INFO  MedicoServiceImp:50 - Se registró un médico
+2022-01-20 18:13:34 ERROR MedicoServiceImp:42 - El medico no tiene obras sociales
+2022-01-20 18:13:34 ERROR MedicoTestCase:93 - ar.edu.unju.fi.poo.clinica.exceptions.ModelException: El medico no tiene obras sociales
+2022-01-20 18:13:35 DEBUG MedicoTestCase:69 - Limpiando variables
+2022-01-20 18:13:35 DEBUG MedicoTestCase:55 - Configurando en SetUp...
+2022-01-20 18:13:35 INFO  MedicoTestCase:105 - Buscando medico
+2022-01-20 18:13:35 DEBUG MedicoTestCase:69 - Limpiando variables
+2022-01-20 18:16:31 DEBUG PacienteTestCase:51 - Configurando en SetUp...
+2022-01-20 18:16:31 INFO  PacienteTestCase:77 - Iniciando registro de pacientes
+2022-01-20 18:16:31 INFO  PacienteManager:51 - Se registro un nuevo paciente
+2022-01-20 18:16:31 INFO  PacienteManager:51 - Se registro un nuevo paciente
+2022-01-20 18:16:31 INFO  PacienteManager:51 - Se registro un nuevo paciente
+2022-01-20 18:16:31 INFO  PacienteManager:51 - Se registro un nuevo paciente
+2022-01-20 18:16:31 ERROR PacienteManager:54 - Obra social invalida
+2022-01-20 18:16:31 ERROR PacienteTestCase:90 - ar.edu.unju.fi.poo.clinica.exceptions.ModelException: Obra Social invalida
+2022-01-20 18:16:31 DEBUG PacienteTestCase:63 - Limpiando variables
+2022-01-20 18:16:31 DEBUG PacienteTestCase:51 - Configurando en SetUp...
+2022-01-20 18:16:31 INFO  PacienteTestCase:120 - Buscando paciente
+2022-01-20 18:16:31 DEBUG PacienteTestCase:63 - Limpiando variables
+2022-01-20 18:16:31 DEBUG PacienteTestCase:51 - Configurando en SetUp...
+2022-01-20 18:16:31 INFO  PacienteTestCase:107 - Actualizando datos
+2022-01-20 18:16:32 INFO  PacienteManager:51 - Se registro un nuevo paciente
+2022-01-20 18:16:32 DEBUG PacienteTestCase:63 - Limpiando variables
+2022-01-20 18:18:54 DEBUG TurnoTestCase:74 - Configurando en SetUp...
+2022-01-20 18:18:54 INFO  PacienteManager:51 - Se registro un nuevo paciente
+2022-01-20 18:18:54 INFO  PacienteManager:51 - Se registro un nuevo paciente
+2022-01-20 18:18:54 INFO  PacienteManager:51 - Se registro un nuevo paciente
+2022-01-20 18:18:54 INFO  MedicoServiceImp:50 - Se registró un médico
+2022-01-20 18:18:54 INFO  MedicoServiceImp:50 - Se registró un médico
+2022-01-20 18:18:54 INFO  MedicoServiceImp:50 - Se registró un médico
+2022-01-20 18:18:54 INFO  TurnoTestCase:123 - Agregando turnos
+2022-01-20 18:18:54 INFO  TurnoServiceImp:67 - Se ha registrado un turno
+2022-01-20 18:18:54 INFO  TurnoServiceImp:67 - Se ha registrado un turno
+2022-01-20 18:18:54 ERROR TurnoServiceImp:57 - Los turnos se superponen
+2022-01-20 18:18:54 ERROR TurnoTestCase:142 - ar.edu.unju.fi.poo.clinica.exceptions.ModelException: Turnos superpuestos
+2022-01-20 18:18:54 DEBUG TurnoTestCase:96 - Limpiando variables
