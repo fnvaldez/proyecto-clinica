@@ -68,6 +68,14 @@ public class Medico extends Persona {
 		this.obrasSociales = obrasSociales;
 	}
 
+	public List<Turno> getTurnos() {
+		return turnos;
+	}
+
+	public void setTurnos(List<Turno> turnos) {
+		this.turnos = turnos;
+	}
+
 	@Override
 	public String toString() {
 		return "Medico [matricula=" + matricula + ", turnoLaboral=" + turnoLaboral + "]";
