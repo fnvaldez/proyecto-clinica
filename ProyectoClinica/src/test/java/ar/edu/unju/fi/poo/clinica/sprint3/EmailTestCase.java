@@ -1,4 +1,4 @@
-package ar.edu.unju.fi.poo.clinica.sprint2;
+package ar.edu.unju.fi.poo.clinica.sprint3;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -31,9 +31,9 @@ import ar.edu.unju.fi.poo.clinica.service.imp.TurnoServiceImp;
 
 @SpringBootTest
 @TestMethodOrder(MethodOrderer.MethodName.class)
-class TurnoTestCase {
+class EmailTestCase {
 
-	final static Logger logger = Logger.getLogger(TurnoTestCase.class);
+	final static Logger logger = Logger.getLogger(EmailTestCase.class);
 	
 	@Autowired
 	private PacienteServiceImp pacienteService;
@@ -50,13 +50,9 @@ class TurnoTestCase {
 	
 	PacienteDTO paciente1;
 	PacienteDTO paciente2;
-	PacienteDTO paciente3;
 	MedicoDTO medico1;
-	MedicoDTO medico2;
-	MedicoDTO medico3;
 	TurnoDTO turno1;
 	TurnoDTO turno2;
-	TurnoDTO turno3;
 	
 	@BeforeAll
 	static void setUpBeforeClass() throws Exception {
@@ -73,36 +69,27 @@ class TurnoTestCase {
 		
 		logger.debug("Configurando en SetUp...");
 		
-		paciente1 = new PacienteDTO("Juan Alvarez", "jalvarez@gmail.com", 1000000, "424 Bosco Garden Suite 691", "1976235", 1L);
-		paciente2 = new PacienteDTO("Jose Baena", "jbaena@gmail.com", 200, "27769 Thompson Rapid", "3841840", 2L);
-		paciente3 = new PacienteDTO("David Quitero", "dquintero@gmail.com", 300, "2694 Conner Toute Suite 789", "6225750", 3L);
+		paciente1 = new PacienteDTO("Juan Alvarez", "valdezfn15@gmail.com", 1000000, "424 Bosco Garden Suite 691", "1976235", 1L);
+		paciente2 = new PacienteDTO("Jose Baena", "jbaena@gmail.com", 2000000, "27769 Thompson Rapid", "3841840", 2L);
 		
 		List<ObraSocialDTO> obras = obraSocialService.getAllObrasSociales();
 		
 		List<TurnoDTO> turnos = new ArrayList<>();
 		
-		medico1 = new MedicoDTO("Juan", "valdezfn15@gmail.com", 1230123, "MAÑANA", obras, turnos);
-		medico2 = new MedicoDTO("Marcos", "marcos@gmail.com", 3210321, "MAÑANA", obras, turnos);
-		medico3 = new MedicoDTO("Silvia", "silvia@gmail.com", 1411141, "MAÑANA", obras, turnos);
+		medico1 = new MedicoDTO("Juan Velez", "florencianoelivaldez@gmail.com", 1230123, "MAÑANA", obras, turnos);
 		
 		turno1 = new TurnoDTO(null, null, LocalDateTime.of(LocalDate.now(), LocalTime.of(9, 0)), LocalDateTime.of(LocalDate.now(), LocalTime.of(10, 0)));
 		turno2 = new TurnoDTO(null, null,LocalDateTime.of(LocalDate.now(), LocalTime.of(10, 0)),LocalDateTime.of(LocalDate.now(), LocalTime.of(11, 0)));
-		turno3 = new TurnoDTO(null, null, LocalDateTime.of(LocalDate.now(), LocalTime.of(10, 30)),LocalDateTime.of(LocalDate.now(), LocalTime.of(11, 30)));
 		
 	}
 
 	@AfterEach
 	void tearDown() throws Exception {
 		logger.debug("Limpiando variables");
-		
 		paciente1 = null;
 		paciente2 = null;
-		paciente3 = null;
 		medico1 = null;
-		medico2 = null;
-		medico3 = null;
 		turno1 = null;
-		turno3 = null;
 		turno2 = null;
 	}
 
@@ -112,35 +99,24 @@ class TurnoTestCase {
 		
 		pacienteService.registrarPaciente(paciente1);
 		pacienteService.registrarPaciente(paciente2);
-		pacienteService.registrarPaciente(paciente3);
 		
 		medicoService.altaMedico(medico1);
-		medicoService.altaMedico(medico2);
-		medicoService.altaMedico(medico3);
 		
 		
 		
 		logger.info("Agregando turnos");
 		
-		turno1.setMedicoId(5L);
+		turno1.setMedicoId(3L);
 		turno1.setPacienteId(1L);
 		turnoService.registarTurno(turno1);
 		
-		assertTrue(turnoService.buscarTurnoPorId(1L) != null );
-		
-		turno2.setMedicoId(5L);
+		turno2.setMedicoId(3L);
 		turno2.setPacienteId(2L);
 		turnoService.registarTurno(turno2);
 		
-		assertTrue(turnoService.getAllTurnos().size()>1);
+		assertTrue(turnoService.getAllTurnos().size()>0);
 		
-		try {
-			turno3.setMedicoId(5L);
-			turno3.setPacienteId(3L);
-			turnoService.registarTurno(turno3);
-		} catch (Exception e) {
-			logger.error(e);
-		}
-		
+				
 	}
+
 }
