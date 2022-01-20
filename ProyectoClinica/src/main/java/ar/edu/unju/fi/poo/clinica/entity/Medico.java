@@ -30,8 +30,8 @@ public class Medico extends Persona {
 				inverseJoinColumns = @JoinColumn(name = "obra_social_id"))
 	private List<ObraSocial> obrasSociales;
 	
-	//@OneToMany(cascade = CascadeType.ALL, fetch = FetchType.LAZY, mappedBy = "medico")
-	//private List<Turno> turnos;
+	@OneToMany(cascade = CascadeType.ALL, fetch = FetchType.LAZY, mappedBy = "medico")
+	private List<Turno> turnos;
 	
 	public Medico() {
 		// TODO Auto-generated constructor stub

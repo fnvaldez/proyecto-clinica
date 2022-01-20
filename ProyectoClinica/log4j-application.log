@@ -1,0 +1,27 @@
+2022-01-20 16:51:12 DEBUG MedicoTestCase:61 - Configurando en SetUp...
+2022-01-20 16:51:12 INFO  MedicoTestCase:100 - Registrando medico
+2022-01-20 16:51:13 INFO  MedicoManager:29 - Se regitró un médico
+2022-01-20 16:51:13 INFO  MedicoManager:29 - Se regitró un médico
+2022-01-20 16:51:13 INFO  MedicoManager:29 - Se regitró un médico
+2022-01-20 16:51:13 ERROR MedicoManager:25 - El medico no tiene obras sociales
+2022-01-20 16:51:13 ERROR MedicoTestCase:112 - ar.edu.unju.fi.poo.clinica.exceptions.ModelException: El medico no tiene obras sociales
+2022-01-20 16:51:13 DEBUG MedicoTestCase:83 - Limpiando variables
+2022-01-20 16:51:13 DEBUG MedicoTestCase:61 - Configurando en SetUp...
+2022-01-20 16:51:13 INFO  MedicoTestCase:124 - Buscando medico
+2022-01-20 16:51:13 DEBUG MedicoTestCase:83 - Limpiando variables
+2022-01-20 16:57:33 DEBUG PacienteTestCase:61 - Configurando en SetUp...
+2022-01-20 16:57:33 INFO  PacienteTestCase:97 - Iniciando registro de pacientes
+2022-01-20 16:57:33 INFO  PacienteManager:29 - Se registro un nuevo paciente
+2022-01-20 16:57:33 INFO  PacienteManager:29 - Se registro un nuevo paciente
+2022-01-20 16:57:33 INFO  PacienteManager:29 - Se registro un nuevo paciente
+2022-01-20 16:57:33 INFO  PacienteManager:29 - Se registro un nuevo paciente
+2022-01-20 16:57:33 ERROR PacienteManager:25 - Obra social invalida
+2022-01-20 16:57:33 ERROR PacienteTestCase:110 - ar.edu.unju.fi.poo.clinica.exceptions.ModelException: Obra Social invalida
+2022-01-20 16:57:33 DEBUG PacienteTestCase:79 - Limpiando variables
+2022-01-20 16:57:33 DEBUG PacienteTestCase:61 - Configurando en SetUp...
+2022-01-20 16:57:33 INFO  PacienteTestCase:128 - Buscando paciente
+2022-01-20 16:57:34 DEBUG PacienteTestCase:79 - Limpiando variables
+2022-01-20 16:57:34 DEBUG PacienteTestCase:61 - Configurando en SetUp...
+2022-01-20 16:57:34 INFO  PacienteTestCase:143 - Actualizando datos de paciente
+2022-01-20 16:57:34 INFO  PacienteManager:29 - Se registro un nuevo paciente
+2022-01-20 16:57:34 DEBUG PacienteTestCase:79 - Limpiando variables
