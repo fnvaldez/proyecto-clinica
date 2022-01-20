@@ -31,8 +31,8 @@ public class Paciente extends Persona {
 	@JoinColumn(name = "obra_social_id", nullable = false)
 	private ObraSocial obraSocial;
 	
-	//@OneToMany(cascade = CascadeType.ALL, fetch = FetchType.LAZY, mappedBy = "paciente")
-	//private List<Turno> turnos;
+	@OneToMany(cascade = CascadeType.ALL, fetch = FetchType.LAZY, mappedBy = "paciente")
+	private List<Turno> turnos;
 	
 	public Paciente() {
 		// TODO Auto-generated constructor stub
@@ -77,7 +77,7 @@ public class Paciente extends Persona {
 	public void setObraSocial(ObraSocial obraSocial) {
 		this.obraSocial = obraSocial;
 	}
-/*
+
 	public List<Turno> getTurnos() {
 		return turnos;
 	}
@@ -85,7 +85,7 @@ public class Paciente extends Persona {
 	public void setTurnos(List<Turno> turnos) {
 		this.turnos = turnos;
 	}
-*/
+
 	@Override
 	public String toString() {
 		return "Paciente [domicilio=" + domicilio + ", numeroDeCelular=" + numeroDeCelular + ", obraSocial="

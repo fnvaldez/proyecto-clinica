@@ -12,10 +12,10 @@ import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
-//@Entity
-//@Table(name = "TURNOS")
+@Entity
+@Table(name = "TURNOS")
 public class Turno {
-/*
+
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
@@ -91,5 +91,5 @@ public class Turno {
 		return "Turno [id=" + id + ", paciente=" + paciente + ", medico=" + medico + ", fechaHoraInicio="
 				+ fechaHoraInicio + ", fechaHoraFin=" + fechaHoraFin + "]";
 	}
-	*/
+	
 }
